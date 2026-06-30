@@ -1,5 +1,13 @@
 'use strict';
 
+const contactForm = document.querySelector('.contact__form');
+
+contactForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  contactForm.reset();
+});
+
 const SLIDER_ANIMATION_DURATION = 450;
 
 function initSlider({
