@@ -46,12 +46,13 @@
     display: block;
     width: 100%;
     height: auto;
+    mix-blend-mode: darken;
 
     @include hover(transform, scale(1.05));
   }
 
   &__text-content {
-    width: 260px;
+    width: 100%;
 
     @include on-tablet {
       grid-column: 1 / 4;
@@ -67,13 +68,20 @@
   &__title {
     @extend %h1;
 
+    position: relative;
+    z-index: 2;
     margin: 0 0 clamp(20px, 3vh, 30px);
+    text-align: center;
+
+    @include on-tablet {
+      width: 250px;
+    }
   }
 
   &__description {
     @extend %main-text;
 
-    width: 260px;
+    width: 100%;
     margin: 0;
 
     @include on-tablet {

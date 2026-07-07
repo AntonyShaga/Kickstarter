@@ -16,7 +16,7 @@
   }
 
   &__content {
-    width: 260px;
+    width: 100%;
 
     @include on-tablet {
       width: auto;
@@ -65,7 +65,7 @@
         }
 
         @include on-desktop {
-          grid-column: 7 / 11;
+          grid-column: 7 / 12;
         }
       }
     }
@@ -89,7 +89,7 @@
         }
 
         @include on-desktop {
-          grid-column: 1 / 5;
+          grid-column: 1 / 6;
         }
       }
     }
@@ -108,6 +108,7 @@
 
     margin: 0 0 30px;
     color: $color-primary;
+    text-align: center;
   }
 
   &__text {
